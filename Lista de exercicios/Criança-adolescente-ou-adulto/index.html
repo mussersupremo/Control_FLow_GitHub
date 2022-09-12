@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criança, adolescente, jovem ou adulto??</title>
+</head>
+<body>
+   <script>
+        var idade = prompt("Quantos anos você tem?")
+        var cr = "criança"
+        var ado = "adolescente"
+        var jo = "jovem"
+        var adu = "adulto"
+        var ido = "idoso"
+
+        if (idade >= 0 && idade <= 11) {
+            idade = cr
+        }
+        if (idade >= 12 && idade <= 17) {
+            idade = ado
+        }
+        if (idade >= 18 && idade <= 29) {
+            idade = jo
+        }
+        if(idade >= 30 && idade <= 59){
+            idade = adu 
+        }
+        if(idade >= 60){
+            idade = ido
+        }
+        
+        alert(`Você é um(a) ${idade}!!`)
+    </script>
+</body>
+</html>
